@@ -11,19 +11,42 @@ def monetize():
 def high_level_structure():
 	a = lambda: you_should() + " " + monetize() + " your " + suckers() + " to " + maximize_shareholder_value()
 	return choose ( [
-			a,a,a,a,a,#socialmobile  #Still working on the socialmobile template
+			a,a,a,a,socialmobile 
 			
 		]
 	) ()
 
 
 def socialmobile():
-	buzzword = lambda: choose( [industry, suckers, connect, community] )()
-	a = buzzword()
-	b = buzzword()
+	buzzword = lambda: choose( [industry, community, verbing, verbing] )()
+	a = adjective()
+	b = adjective()
 	c = buzzword()
-	d = buzzword()
+	d = app()
 	return "%s. %s. %s. %s. %s %s %s %s." % (a.capitalize(),b.capitalize(),c.capitalize(),d.capitalize(),a.capitalize(),b,c,d)
+
+
+def app():
+	return choose([ "app", "site", "twitterstream", "cloud", "device",
+		"revolution", "course", "experience", "crowdsource", "game",
+		"challenge"])
+
+def verbing():
+	return choose([ "thinking", 
+	"doing", "sharing", 
+	"clicking", "twitterizing", "verbing",
+	"eating", "buying", "selling",
+	"writing", "collaborating",
+	"caring", "filming", "drawing",
+	"staring", "charring", "energizing",
+	"motivating", "socializing",
+	"networking", "creativing"])
+	
+def adjective():
+	return choose(["social", "mobile", "colorful",
+	"web 2.0", "twitteriffic", "online", "HTML5",
+	"videofied", "futuristic", "magical", "powerful",
+	"professional"])
 
 def suckers():
 	return choose ( [
