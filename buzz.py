@@ -9,10 +9,21 @@ def monetize():
 	return choose ( ["monetize", "awesomize", "leverage", "synergize", "emphasize"] )
 
 def high_level_structure():
+	a = lambda: you_should() + " " + monetize() + " your " + suckers() + " to " + maximize_shareholder_value()
 	return choose ( [
-			lambda: you_should() + " " + monetize() + " your " + suckers() + " to " + maximize_shareholder_value(),
+			a,a,a,a,a,#socialmobile  #Still working on the socialmobile template
+			
 		]
 	) ()
+
+
+def socialmobile():
+	buzzword = lambda: choose( [industry, suckers, connect, community] )()
+	a = buzzword()
+	b = buzzword()
+	c = buzzword()
+	d = buzzword()
+	return "%s. %s. %s. %s. %s %s %s %s." % (a.capitalize(),b.capitalize(),c.capitalize(),d.capitalize(),a.capitalize(),b,c,d)
 
 def suckers():
 	return choose ( [
@@ -52,7 +63,7 @@ def you_should():
      "You should",
      "You need to",
      "We all know you should",
-     "What most developers don't know is",
+     "The best way is to",
      "The way you gotta approach this is",
     ]
     return choose(you_shoulds)
@@ -99,7 +110,7 @@ def in_journal():
 	])
 
 def a_while_back():
-	return choose(["", "", "", "", "", "about", "like"]) + " " + choose(['one', 'two', 'three', 'four', 'five']) + " " + choose(["days", "years", "months"]) + " ago"
+	return choose(["", "", "", "", "", "about", "like"]) + " " + choose(['two', 'three', 'four', 'five']) + " " + choose(["days", "years", "months"]) + " ago"
 
 def guy():
 	return choose(["Donald Knuth", "Donal Trump","Sergey Brin", "Leonardo Dicaprio", "Paul Graham", "Linus Torvalds", "Tim O'Reilly", "Mark Zuckerberg", "Ashton Kucher", "The Woz", "Steve Jobs", "Jeff Bezos", "Evan Williams", "Sean Parker", "Meg Whitman", "Bain Capital VC", "Thomas Malthus", "Henry Kissinger"])
@@ -114,6 +125,7 @@ def maximize_shareholder_value():
         lambda: "grow product revenue",
         lambda: "increase customer conversions",
         lambda: "revolutionize the way we think about " + industry(),
+        lambda: "change the way we think about " + industry(),
         lambda: "grab market share in " + industry(),
     ]
     return choose(maximum)()
