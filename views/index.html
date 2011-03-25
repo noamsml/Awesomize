@@ -1,4 +1,4 @@
-$def with (source, quote)
+$def with (source, quote, img)
 <!doctype html>
 <html>
     <head>
@@ -88,12 +88,12 @@ $def with (source, quote)
         <header id="header">Awesomize<sup>&beta;</sup> (An HTML5 social local sharing app)</header>
 
         <div id="quote">
-        <h2 class="source">$source</h2>
-        <h1 class="advice">$quote</h1>
+        <h2 class="source">$source:</h2>
+        <h1 class="advice">$quote.</h1>
         </div>
         <div id="man">
             <span id="quotearrow">`</span>
-            <img src="/static/bizman.png">
+            <img src="/static/$img">
         </div>
         <footer id="footer">
             a revolution started by noam samuel &amp; <a href="http://stephenbalaban.com/">stephen balaban</a>.
