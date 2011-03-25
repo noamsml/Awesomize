@@ -23,7 +23,7 @@ def socialmobile():
 	b = adjective()
 	c = buzzword()
 	d = app()
-	return "%s. %s. %s. %s. %s %s %s %s." % (a.capitalize(),b.capitalize(),c.capitalize(),d.capitalize(),a.capitalize(),b,c,d)
+	return "%s. %s. %s. %s. %s %s %s %s" % (a.capitalize(),b.capitalize(),c.capitalize(),d.capitalize(),a.capitalize(),b,c,d)
 
 
 def app():
