@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <title>How the Fuck Do We Monetize This Shit?</title>
+        <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            html {
+                height: 100%;
+                margin: 0; padding: 0;
+            }
+            body {
+                margin: 0; padding: 0;
+            }
+            * {
+                font-family: 'Arimo', arial, serif;
+                letter-spacing: 0em;
+                word-spacing: 0em;
+                line-height: 1.2;
+            }
+            #awesomize {
+            }
+            #quote {
+                margin: 1em 0 0 1em;
+                background: #CCC; 
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#eeeeee');
+                background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#eeeeee));
+                background: -moz-linear-gradient(top,  #ccc,  #eeeeee);
+                border: 1px solid #CCC;
+                padding: 1em;
+                -webkit-border-radius: 1em;
+                -moz-border-radius: 1em;
+                width: 80%;
+                float: left;
+            }
+            #quotearrow {
+                font-style: bold;
+                color: #EEE;
+                font-size: 9em;
+                position: relative;
+                float: right;
+                top: -29px;
+                right: 300px;
+                text-shadow: 1px 1px 0 #CCC;
+            }
+            #man {
+                width: 100%;
+                float: right;
+                position: relative;
+                top: 0;
+                padding: 0px;
+                margin: 0px;
+                border-bottom: 1px solid black;
+                background: #CCC; 
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffff', endColorstr='#eeeeee');
+                background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eeeeee));
+                background: -moz-linear-gradient(top,  #fff,  #eeeeee);
+            }
+            #man img {
+                float: right;
+            }
+            .source {
+                margin: 0;
+                color: #333333;
+                font-style: italic;
+                font-size: 2em;
+                text-shadow: #FFF 0px 0.032em 0px;
+
+            }
+            .advice {
+                margin: 0;
+                font-size: 4em;
+                text-shadow: #FFF 0px 0.032em 0px;
+            }
+
+            #footer {
+                clear: both;
+                float: left;
+                position: fixed;
+                bottom: 0;
+            }
+            #header {
+                margin-left: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">Awesomize<sup>&beta;</sup> (An HTML5 social local sharing app)</header>
+
+        <div id="quote">
+        <h2 class="source">I'm no expert, but I read this in the Wall Street Journal:</h2>
+        <h1 class="advice">The way you gotta approach this is to twitterize
+            friendship bracelets to maximize shareholder value.</h1>
+        </div>
+        <div id="man">
+            <span id="quotearrow">`</span>
+            <img src="bizman.png" />
+        </div>
+        <footer id="footer">
+            a revolution started by noam samuel &amp; <a href="http://stephenbalaban.com/">stephen balaban</a>.
+        </footer>
+    </body>
+</html>
