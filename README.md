@@ -4,10 +4,10 @@
 Pull
 
 ##Step 2:
-python main.py <port> [default is 8080]
+python main.py *port* [default is 8080]
 
 ##Step 4:
-http://localhost:<port>
+http://localhost:*port*
 
 ##Step 5:
 LOLOLOL
