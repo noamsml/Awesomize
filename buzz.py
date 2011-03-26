@@ -16,7 +16,6 @@ def high_level_structure():
 		]
 	) ()
 
-
 def socialmobile():
 	buzzword = lambda: choose( [industry, community, verbing, verbing] )()
 	a = adjective()
@@ -27,26 +26,25 @@ def socialmobile():
 
 
 def app():
-	return choose([ "app", "site", "twitterstream", "cloud", "device",
-		"revolution", "course", "experience", "crowdsource", "game",
-		"challenge"])
+	return choose([ "app", "site", "social network", "platform", "cellphone",
+		"coupons", "framework", "game", "wiki"])
 
 def verbing():
 	return choose([ "thinking", 
-	"doing", "sharing", 
-	"clicking", "twitterizing", "verbing",
+	"doing", "sharing", "searching"
+	"clicking", "tweeting", "verbing",
+    "facebooking", "chatting",
 	"eating", "buying", "selling",
+    "learning",
 	"writing", "collaborating",
 	"caring", "filming", "drawing",
-	"staring", "charring", "energizing",
+	"staring", "energizing",
 	"motivating", "socializing",
 	"networking", "creativing"])
 	
 def adjective():
-	return choose(["social", "mobile", "colorful",
-	"web 2.0", "twitteriffic", "online", "HTML5",
-	"videofied", "futuristic", "magical", "powerful",
-	"professional"])
+    return choose(["social", "mobile", "school", "web 2.0", "local", "RSS",
+        "web sockets", "power", "HTML5", "money", "global", "professional"])
 
 def suckers():
 	return choose ( [
@@ -73,11 +71,8 @@ def connect():
 
 
 def community():
-	return choose ( [ "friends", "cow-orkers", "grandmothers", "wives and mistresses", "the world"] )
+	return choose ( [ "friends", "cow-orkers", "grandmothers", "wives and mistresses", "the world", "baby booomers", "millenials", "liberals", "republicans", "democrats", "bosses", "hackers", "nubile children"] )
 
-
-	
-	
 def you_should():
     you_shoulds = [
      "What you should do is",
